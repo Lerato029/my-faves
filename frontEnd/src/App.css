@@ -1,0 +1,233 @@
+/* =================================================App Component Styling=============================================== */
+/* removing default padding and margin settings */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*main div */
+.App {
+  text-align: center;
+  background: linear-gradient(0deg, #ffffff 0%, #000000 100%);
+  background-size: 1000%;
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 10% 0;
+}
+
+/* ===============================================General Styling=========================================================== */
+
+h2 {
+  width: 60%;
+  padding: 3% 2% 0 2%;
+  font-size: 50px !important;
+  text-transform: uppercase;
+}
+
+h5 {
+  padding-top: 30px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  padding: 2%;
+}
+/* ==========General Styling |Responsive|==================== */
+@media screen and (max-width: 600px) {
+  h2 {
+    width: 100%;
+    padding-top: 10% !important;
+    padding-bottom: 0 !important;
+    font-size: 18px !important;
+  }
+  h5 {
+    font-size: 12px !important;
+    font-weight: bold !important;
+  }
+  /* p elements */
+  p {
+    font-size: 11px;
+  }
+}
+/* =================================================================The Header====================================================== */
+
+.heading {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 10px;
+  opacity: 1;
+}
+.headerTitle {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding: 2%;
+  padding-bottom: 5%;
+  border: 2px solid #ffffff44;
+  /* Image sourced from: https://www.udiscovermusic.com/wp-content/uploads/2016/03/1000x600-best-illustrated-music-books-web-optimised.jpg */
+  background-image: url("images/1000x600-best-illustrated-music-books-web-optimised.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /*image to cover the entire container */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* =======Header |Responsive|=============== */
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 35px !important;
+    text-transform: uppercase;
+    margin: 10px;
+  }
+
+  /* hide description*/
+  .header h5 {
+    display: none;
+  }
+  .header {
+    width: 90%;
+    margin-bottom: 20%;
+  }
+}
+
+/* ===============================================================Form====================================================== */
+form {
+  padding: 1% 2%;
+  border: 1px solid #ffffff44;
+  position: relative;
+  margin: 2%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===============Form |Responsive|=========================== */
+@media screen and (max-width: 600px) {
+  form {
+    margin-top: 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 70%;
+    background: #ffffff44;
+  }
+}
+
+/* ===================================================================Vertical Menu============================================ */
+.verticalMenu {
+  margin-top: 0;
+  border: 2px solid #ffffff44;
+  width: 50%;
+  height: 600px;
+  overflow-y: auto;
+  background: #ffffff0e;
+  padding-right: 5px;
+}
+
+.listItem {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #0b1322;
+}
+.itemHeading {
+  width: 80%;
+}
+
+/* ============Vertical Menu |Responsive|==================== */
+@media screen and (max-width: 600px) {
+  .listItem {
+    font-size: 15px;
+  }
+  .verticalMenu {
+    margin: 10% 0;
+    width: 90%;
+  }
+}
+
+/* ========================================Collection Grid============================================ */
+/* Float columns */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Row to have max height to control overflow */
+.row {
+  border: 2px solid #ffffff44;
+  width: 90%;
+  height: 600px;
+  overflow-y: auto;
+}
+
+/* Clearing floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.blackFont {
+  width: 100%;
+  padding: 0 !important;
+  margin-top: 20px;
+  color: rgb(58, 58, 58);
+  height: 50px !important;
+  overflow-x: auto !important ;
+  font-weight: bold !important;
+}
+
+/* Style the collection cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* fixed height so elements are uniform */
+  height: 300px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff44 !important;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+/* hover effect */
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 20%;
+}
+
+/* ============Collection Grid |Responsive|==================== */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card img {
+    width: 30%;
+  }
+}

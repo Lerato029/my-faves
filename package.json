@@ -1,0 +1,43 @@
+{
+  "name": "collection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": " mocha ",
+    "dev": "node server.js",
+    "frontEnd-Test": "cd frontEnd && npm test",
+    "frontEnd-Install": "cd frontEnd && npm install",
+    "server": "nodemon server.js",
+    "frontEnd": "npm start --prefix frontEnd",
+    "start": "concurrently \"npm run server\" \"npm run frontEnd\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontEnd && npm run build --prefix frontEnd"
+  },
+  "keywords": [],
+  "author": "Lerato Mokgwabona",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.35",
+    "@fortawesome/free-brands-svg-icons": "5.15.3",
+    "@fortawesome/free-regular-svg-icons": "5.15.3",
+    "@fortawesome/free-solid-svg-icons": "5.15.3",
+    "@fortawesome/react-fontawesome": "0.1.14",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "4.6.0",
+    "morgan": "^1.10.0",
+    "node-fetch": "2.6.1",
+    "request": "2.88.2"
+  },
+  "devDependencies": {
+    "chai": "4.3.4",
+    "mocha": "8.3.2",
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "v14.15.4",
+    "npm": "6.14.10"
+  }
+}

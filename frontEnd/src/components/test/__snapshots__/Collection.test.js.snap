@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="row"
+>
+  <div
+    class="column"
+  >
+    <div
+      class="card"
+    >
+      <img
+        alt="Life of a bee"
+        src=""
+      />
+      <h5
+        className="blackFont"
+      >
+        Life of a bee
+      </h5>
+      <p
+        className="blackFont"
+      >
+        Movie
+      </p>
+      <button
+        className="btn btn-danger"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        DELETE
+      </button>
+    </div>
+  </div>
+</div>
+`;

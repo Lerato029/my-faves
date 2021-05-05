@@ -2,7 +2,7 @@
 
 ### Full-Stack Web App with React and Express
 
-**This project was created with React.js, Node.js and Express. It is a great reference for anyone who wishes to understand how to run an external API from the back-end**
+**This project was created with React.js, Node.js and Express. It is a great reference for anyone who wishes to see how to run an external API from the back-end**
 
 ## `Table of Contents`  
 
@@ -14,7 +14,7 @@
 
 <a name="installation"/>  
 
-## Installing and Running Project:
+## `Installing and Running Project:`
 First Install zip folder from GitHub repository : https://github.com/Lerato029/my-faves extract and then open the terminal.
 
 ### Running the command line:
@@ -30,14 +30,12 @@ npm run frontEnd-Install
 
 # Run the frontEnd & server with concurrently
 npm start
-![005_start app](https://user-images.githubusercontent.com/79574031/117142857-7b55c500-adb0-11eb-928b-bbfe929a95b5.PNG)
-
 
 ```
 
 <a name="manual"/> 
 
-## Manual:
+## `Manual:`
 ![005_1-landing](https://user-images.githubusercontent.com/79574031/117142911-87da1d80-adb0-11eb-980f-04cef3a673a6.PNG)
 
 After opening the app, submit the form after selecting a search category and typing in a search term.
@@ -56,7 +54,7 @@ The App is also responsive:
 
 <a name="test"/> 
 
-## Testing The App:
+## `Testing The App:`
 To test the frontEnd directory type cd frontEnd in the terminal and then npm test. This will result in the following output:
 ![001_Running test on frontEnd](https://user-images.githubusercontent.com/79574031/117141494-e3a3a700-adae-11eb-9575-2e134474bc87.PNG)
 The tests incoporate a snapshot of the Collection.js child component and a unit test of the fetch method.
@@ -68,7 +66,7 @@ Test is run with mocha and chia and tests the status code, if there's an error r
 
 <a name="security"/> 
 
-## Security:
+## `Security:`
 To Secure my code I've used helmet to secure my code. No API key were required for this project thus there was no need to hide them.
 ![004_use Helmet](https://user-images.githubusercontent.com/79574031/117142533-1bf7b500-adb0-11eb-8524-0db3f36e3108.PNG)
 
@@ -76,7 +74,9 @@ To Secure my code I've used helmet to secure my code. No API key were required f
 
 <a name="deployed"/> 
 
-## Deployed Version:
+## `Deployed Version:`
+Link: https://frozen-ocean-64913.herokuapp.com/
+
 
 <a name="credits"/> 
 
